@@ -1,0 +1,502 @@
+/**Mobile first**/
+body {
+    background-color: #EFEFE4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    padding: 0px 10px;
+}
+
+.nav-style li a {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.nav-style li a{
+    font-size: 25px;
+}
+
+.dropdowns{
+    color:#1B2437; 
+}
+
+.dropdown{
+padding: 10px 10px;
+
+}
+
+.style-select {
+    background-color: #E5E5EA; 
+    color: #C7C7CC; 
+    border-radius: 8px;
+} 
+
+.buttons{
+    margin-left: 10px;
+}
+
+.button{
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+.test1{
+    color: #1B2437;
+    font-size: 16px;
+    width: 22%;
+    height: 40px;
+    border: 2px solid #E5E5EA;
+    border-radius: 8px;
+    box-shadow:transparent;
+    margin-right: 12px;
+}
+
+.test1:hover{
+    background-color:#EDA3B5;
+    border: 2px solid #EDA3B5;
+    
+}
+
+.icon-arrow {
+    width: 24px;
+    cursor: pointer;
+}
+
+.picker-style{
+    width: 149px;
+    height: 72px;
+    margin-left: 25px;
+}
+
+.toggle-style{
+    width: 72px;
+    height: 34px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.two-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.card{
+    width: 100% auto;
+    height: auto;
+    margin-top: 12px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    font-family: 'Playfair Display', serif;
+}
+
+.card-summary{
+    width: 100% auto;
+    height: auto;
+    margin-top: 12px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    font-family: 'Playfair Display', serif;
+    background-color: #242424;
+    color: white;
+}
+
+.card img{
+    border-radius: 16px 15px 0 0;
+}
+
+.card-title{
+    font-size: 34px;
+}
+
+.card-text{
+ font-size: 16px;
+}
+
+.sub-card-text{
+    font-size: 34px;
+}
+
+.btn-shop{
+    font-size: 20px;
+}
+
+/*Phone portrait*/
+@media(min-width: 320px){
+    .test1{
+        width: 25%;
+        height: 44px;
+        }
+}
+
+/*Phone landscape*/
+@media (min-width: 480px){
+    .test1{
+    width: 28.5%;
+    height: 44px;
+    }
+
+    .card{
+        width: 40%;
+        height: 560px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+
+        .dropdowns{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:center
+        
+        }
+
+        .dropdown{
+            width: 20%;
+        }
+
+        .test1{
+         width: 75px;
+         height: 35px ;
+        }
+
+        .card{
+            width: 35%;
+            height: 560px;
+        }
+
+    }
+
+/*Desktop*/
+@media (min-width: 992px){
+    .dropdown{
+        width: 15%;
+    }
+
+    .card{
+        width: 24%;
+        height: 560px;
+    }
+
+    .card-summary{
+        width: 24%;
+        height: 200px;
+    }
+
+    
+}
+
+/*Big Screen*/
+@media (min-width: 1200px){
+
+}
+    
+
+/*
+
+header {
+    width: 76%;
+    margin: 0 auto;
+    padding: 20px 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.logo img {
+    width: auto;
+    height: 24px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    font-size: 24px;
+    color: #1B2437;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+nav ul li a.active {
+    text-decoration: line-through;
+}
+
+.group {
+    margin: 0 auto;
+    width: 76%;
+    padding-right: 113px;
+    padding-left: 113px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.size-buttons{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.size-buttons .buttons{
+    margin-right: 12px;
+}
+
+.option-list{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.option-list .options{
+    margin-right: 24px;
+}
+
+.dropdown-select {
+    border-radius: 8px;
+    background-color: #EFEFE4;
+    width: 170px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #C7C7CC;
+    margin-top: 8px;
+}
+
+.dropdown-select img{
+    margin-right: 8px;
+}
+
+.select {
+    color: #C7C7CC;
+    padding: 13px;
+}
+
+.text-style {
+    color: #1B2437;
+    font-weight: 500;
+}
+
+.text-style-two {
+    color: #EDA3B5;
+    cursor: pointer;
+}
+
+.icon-arrow {
+    width: 24px;
+    cursor: pointer;
+}
+
+.size-dropdown {
+    width: 264px;
+    height: 72px;
+}
+
+.color-dropdown {
+    width: 149px;
+    height: 72px;
+    padding-left: 27px;
+}
+
+.toggle-rows {
+    width: 72px;
+    height: 34px;
+    padding-left: 46px;
+    padding-top: 28px;
+}
+
+.space td {
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.space-two td {
+    padding-right: 12px;
+}
+
+.button-line {
+    margin-top: 8px;
+}
+
+.button {
+    font-size: 16px;
+    cursor: pointer;
+    width: 68px;
+    height: 44px;
+    text-align: center;
+}
+
+.button-one {
+    background-color: #EFEFE4;
+    color: #1B2437;
+    border: 2px solid #C7C7CC;
+    border-radius: 8px;
+}
+
+.button-two {
+    background-color: #EDA3B5;
+    color: #FFFFFF;
+    border: 2px solid #EDA3B5;
+    border-radius: 8px;
+    margin-top: 20.9px;
+}
+
+.button-three {
+    background-color: #EFEFE4;
+    color: #1B2437;
+    border: 2px solid #C7C7CC;
+    border-radius: 8px;
+}
+
+.main{
+    align-items: center;
+    justify-content: center;
+    margin-top: 29px;
+}
+
+.main ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.main ul li {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main ul li.blue {
+    background-color: #1B2437;
+}
+
+.main ul li.blue-green {
+    background-color: #127681;
+}
+
+.main ul li.green {
+    background-color: #32E0C4;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card-body {
+    max-width: 24%;
+    height: 560px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    margin-right: 12px;
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+
+.card-body img {
+    border-radius: 16px 15px 0 0;
+    width: 100%;
+    height: 280px;
+}
+
+.container h4 {
+    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+}
+
+.container p {
+    font-size: 16px;
+    color: #8E8E93;
+    margin-top: 12px;
+}
+
+.container {
+    padding: 24px 32px;
+}
+
+.card-button {
+    height: 52px;
+    width: 160px;
+    border-radius: 16px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-card-one {
+    height: 52px;
+    width: 160px;
+    border-radius: 16px;
+    background-color: #EDA3B5;
+    border: solid #EDA3B5;
+    color: white;
+}
+
+.btn-card-two {
+    height: 52px;
+    width: 160px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border: 2px solid #EDA3B5;
+    color: #EDA3B5;
+}
+
+.second-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 26px;
+}
+
+.second-container label{
+    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+}
+
+.toggle{
+    width: 72px;
+    height: 34px;
+}
+*/
+
